@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  class="spectrum spectrum--medium spectrum--light" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+
+    <link rel="stylesheet" href="./spectrum.css" >
+    <script src="https://cdn.jsdelivr.net/npm/ractive"></script>
+    
+    <script src="./schema.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
-    <h2>World</h2>
+    <form class="spectrum-Form">
+    <div class="spectrum-Form-item">
+        <label class="spectrum-FieldLabel spectrum-FieldLabel--sizeM spectrum-Form-itemLabel spectrum-FieldLabel--left" for="spectrum-textinput-instance">Country</label>
+        <div class="spectrum-Form-itemField">
+          <button class="spectrum-Picker spectrum-Picker--sizeM" aria-haspopup="true">
+            <span class="spectrum-Picker-label is-placeholder">Select a Country</span>
+          </button>
+          <div class="spectrum-Popover spectrum-Popover--withTip spectrum-Popover--right is-open">
 
-<script>
-    console.log(_.toUpper([string='hello world']))
-    console.log("VERSION", _.VERSION)
-</script>
+                <ul class="spectrum-Menu" role="listbox">
+                  
+                </ul>
+            </div> 
+        </div>
+      </div>
+     </form>
+
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
